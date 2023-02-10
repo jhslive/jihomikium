@@ -65,7 +65,7 @@ function App() {
       <br />
       <br />
       <span>
-        총자산 &nbsp;
+        총매수수량 &nbsp;
         <input
           value={maxPrice}
           onChange={(e) => setmaxPrice(e.target.value)}
@@ -130,7 +130,7 @@ function App() {
 
             }}
           >
-            +{(Number((bidPrice*(maxPrice/askPrice))-((askPrice*0.015)+(bidPrice*0.015)+((bidPrice * (maxPrice/askPrice))*0.003))-maxPrice).toFixed(0)).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')}
+            +{(Number(((bidPrice*maxPrice)-((askPrice*0.015)+(bidPrice*0.015)+((bidPrice * maxPrice)*0.003)))-(askPrice*maxPrice)).toFixed(0)).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')}
           </div>
            <div
             style={{
