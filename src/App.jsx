@@ -15,7 +15,7 @@ function App() {
   const [result, setResult] = useState(
     ((((((maxPrice/askPrice)-(maxPrice/askPrice)*0.00015)*bidPrice) -(maxPrice/askPrice)*bidPrice*0.00015)+askPrice / askPrice - 1) * 75 * 100).toFixed(2)
   );
-  const [tangu, setTangu] = useState(false);/
+  const [tangu, setTangu] = useState(false);
 
   useEffect(() => {
     const calculated = (
