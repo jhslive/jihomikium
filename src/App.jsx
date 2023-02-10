@@ -149,7 +149,7 @@ function App() {
 
               }}
             >
-              +{(result).toFixed(2)}%
+              +{result}%
 
             </div>
           </div> 
