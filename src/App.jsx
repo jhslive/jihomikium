@@ -9,7 +9,7 @@ function App() {
   const [coin, setCoin] = useState("카나리아바이오");
   const [askPrice, setaskPrice] = useState("1000"); 
   const [bidPrice, setbidPrice] = useState("1100");
-  const [maxPrice, setmaxPrice] = useState("100000");
+  const [maxPrice, setmaxPrice] = useState("100");
   const [isLong, setIsLong] = useState(true); //eslint-disable-line no-unused-vars
   const [leverage, setLeverage] = useState(1); //eslint-disable-line no-unused-vars
   const [result, setResult] = useState(
