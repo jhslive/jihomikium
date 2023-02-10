@@ -13,7 +13,7 @@ function App() {
   const [isLong, setIsLong] = useState(true); //eslint-disable-line no-unused-vars
   const [leverage, setLeverage] = useState(1); //eslint-disable-line no-unused-vars
   const [result, setResult] = useState(
-        ((((bidPrice*(maxPrice/askPrice))-((askPrice*0.015)+(bidPrice*0.015)+((bidPrice * (maxPrice/askPrice))*0.003))-maxPrice) / maxPrice)*100).toFixed(2)
+        (((((bidPrice*maxPrice)-((askPrice*0.015)+(bidPrice*0.015)+((bidPrice * maxPrice)*0.003)))-(askPrice*maxPrice))/(1000*100))*100).toFixed(2)
   );
   const [tangu, setTangu] = useState(false);
 
