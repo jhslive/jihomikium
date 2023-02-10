@@ -150,7 +150,7 @@ function App() {
 
               }}
             >
-              +{result}%
+              +{(((((bidPrice*maxPrice)-(((askPrice*maxPrice)*0.00015)+((bidPrice*maxPrice)*0.00015)+((bidPrice * maxPrice)*0.003)))-(askPrice*maxPrice))/(1000*100))*100).toFixed(2)}%
 
             </div>
           </div> 
