@@ -149,7 +149,7 @@ function App() {
 
               }}
             >
-              +{result}%
+              +{result-0.36}%
 
             </div>
           </div> 
