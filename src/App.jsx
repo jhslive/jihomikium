@@ -130,7 +130,7 @@ function App() {
 
             }}
           >
-            +{(Number(((((maxPrice/askPrice)-(maxPrice/askPrice)*0.015)*bidPrice) -(maxPrice/askPrice)*bidPrice)-maxPrice).toFixed(0)).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')}
+            +{(Number(((((maxPrice/askPrice)-(maxPrice/askPrice)*0.015)*bidPrice) -(maxPrice/askPrice)*bidPrice*0.015)-maxPrice).toFixed(0)).toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ',')}
           </div>
            <div
             style={{
