@@ -71,18 +71,18 @@ function App() {
       </span>
       &nbsp;&nbsp;&nbsp;&nbsp;
       <span>
-        매도금액 &nbsp;
-        <input
-          value={bidPrice}
-          onChange={(e) => setbidPrice(e.target.value)}
-        />
-      </span>
-      &nbsp;&nbsp;&nbsp;&nbsp;
-      <span>
         매수금액 &nbsp;
         <input
           value={askPrice}
           onChange={(e) => setaskPrice(e.target.value)}
+        />
+      </span>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span>
+        매도금액 &nbsp;
+        <input
+          value={bidPrice}
+          onChange={(e) => setbidPrice(e.target.value)}
         />
       </span>
       <br />
